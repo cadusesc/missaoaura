@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AURA // Arquivo de Tripulação</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="ruido" aria-hidden="true"></div>
+
+    <header class="topo">
+        <a href="#" class="marca" aria-label="Missão Aura, início">
+            <span class="simbolo">A.</span>
+            <span>AURA <small>DEEP SPACE PROGRAM</small></span>
+        </a>
+
+        <div class="status">
+            <span class="ponto"></span>
+            SISTEMA OPERACIONAL
+        </div>
+    </header>
+
+    <main>
+        <section class="abertura">
+            <div class="linha-superior">
+                <span>ARQUIVO Nº 067-A</span>
+                <span>ANO TERRESTRE / 2089</span>
+            </div>
+
+            <p class="sobretitulo">PROTOCOLO DE RECRUTAMENTO</p>
+
+            <h1>Missão
+                 <span>Aura.</span>
+            </h1>
+
+            <p class="introducao">
+                Um planeta sem nome. Uma expedição sem precedentes.
+                Antes da decolagem, descubra qual função combina com
+                a tua maneira de pensar, agir e enfrentar o desconhecido.
+            </p>
+
+            <div class="coordenadas">
+                <span>DESTINO: NÃO CATALOGADO</span>
+                <span>MISSÃO: EXPLORAÇÃO</span>
+                <span>TRIPULAÇÃO: EM SELEÇÃO</span>
+            </div>
+        </section>
+
+        <section class="formulario-painel" id="painelTeste">
+            <div class="painel-cabecalho">
+                <div>
+                    <p class="sobretitulo">ETAPA 01 — TRIAGEM</p>
+                    <h2>Ficha do tripulante</h2>
+                </div>
+                <span class="numero-grande">01<span>/04</span></span>
+            </div>
+
+            <p class="texto-apoio">
+                Não existem respostas certas. Existe a função em que
+                tu poderá contribuir melhor.
+            </p>
+
+            <form id="formulario">
+                <div class="identificacao">
+                    <div class="campo">
+                        <label for="nome">NOME DO PARTICIPANTE</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            maxlength="60"
+                            placeholder="Como devemos te chamar?"
+                            autocomplete="name"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="nascimento">DATA DE NASCIMENTO</label>
+                        <input
+                            type="date"
+                            id="nascimento"
+                            name="nascimento"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="pergunta">
+                    <div class="pergunta-titulo">
+                        <span class="pergunta-numero">Q.01</span>
+                        <h3>Tu desembarca num planeta desconhecido. Qual é teu primeiro impulso?</h3>
+                    </div>
+
+                    <label class="opcao">
+                        <input type="radio" name="q1" value="1" required>
+                        <span class="letra">A</span>
+                        <span class="opcao-texto">Sair para explorar o terreno e descobrir o que existe por ali.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q1" value="2">
+                        <span class="letra">B</span>
+                        <span class="opcao-texto">Analisar a atmosfera, a gravidade e os dados do planeta.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q1" value="3">
+                        <span class="letra">C</span>
+                        <span class="opcao-texto">Verificar os equipamentos e preparar uma base segura.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q1" value="4">
+                        <span class="letra">D</span>
+                        <span class="opcao-texto">Organizar a equipe e definir as prioridades da expedição.</span>
+                    </label>
+                </div>
+
+                <div class="pergunta">
+                    <div class="pergunta-titulo">
+                        <span class="pergunta-numero">Q.02</span>
+                        <h3>Um imprevisto ameaça o andamento da missão. Como tu reage?</h3>
+                    </div>
+
+                    <label class="opcao">
+                        <input type="radio" name="q2" value="1" required>
+                        <span class="letra">A</span>
+                        <span class="opcao-texto">Investigo pessoalmente a situação para entender o que aconteceu.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q2" value="2">
+                        <span class="letra">B</span>
+                        <span class="opcao-texto">Cruzo os dados e calculo os riscos antes de agir.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q2" value="3">
+                        <span class="letra">C</span>
+                        <span class="opcao-texto">Procuro uma solução técnica e tento consertar o problema.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q2" value="4">
+                        <span class="letra">D</span>
+                        <span class="opcao-texto">Reorganizo as tarefas e distribuo responsabilidades.</span>
+                    </label>
+                </div>
+
+                <div class="pergunta">
+                    <div class="pergunta-titulo">
+                        <span class="pergunta-numero">Q.03</span>
+                        <h3>Qual cenário te faria sentir que está no lugar certo?</h3>
+                    </div>
+
+                    <label class="opcao">
+                        <input type="radio" name="q3" value="1" required>
+                        <span class="letra">A</span>
+                        <span class="opcao-texto">Encontrar algo que ninguém da humanidade jamais viu.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q3" value="2">
+                        <span class="letra">B</span>
+                        <span class="opcao-texto">Resolver um enigma científico que parecia impossível.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q3" value="3">
+                        <span class="letra">C</span>
+                        <span class="opcao-texto">Construir algo que funcione mesmo nas condições mais extremas.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q3" value="4">
+                        <span class="letra">D</span>
+                        <span class="opcao-texto">Ver uma equipe superar uma dificuldade graças às minhas decisões.</span>
+                    </label>
+                </div>
+
+                <div class="pergunta">
+                    <div class="pergunta-titulo">
+                        <span class="pergunta-numero">Q.04</span>
+                        <h3>O que a tripulação mais poderia esperar de ti?</h3>
+                    </div>
+
+                    <label class="opcao">
+                        <input type="radio" name="q4" value="1" required>
+                        <span class="letra">A</span>
+                        <span class="opcao-texto">Coragem, curiosidade e disposição para ir além da fronteira.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q4" value="2">
+                        <span class="letra">B</span>
+                        <span class="opcao-texto">Raciocínio preciso, cálculos e previsões cuidadosas.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q4" value="3">
+                        <span class="letra">C</span>
+                        <span class="opcao-texto">Dedicação, criatividade e capacidade de construir soluções.</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input type="radio" name="q4" value="4">
+                        <span class="letra">D</span>
+                        <span class="opcao-texto">Equilíbrio, organização e confiança nos momentos difíceis.</span>
+                    </label>
+                </div>
+
+                <div class="envio">
+                    <p>AO PROSSEGUIR, TEU PERFIL SERÁ ANALISADO.</p>
+                    <button type="submit" class="botao">
+                        ANALISAR PERFIL <span>↗</span>
+                    </button>
+                    <p id="mensagem" role="alert" aria-live="polite"></p>
+                </div>
+            </form>
+        </section>
+
+        <section id="resultado" class="resultado-painel" hidden aria-live="polite">
+            <div class="painel-cabecalho">
+                <div>
+                    <p class="sobretitulo">ETAPA 02 — CLASSIFICAÇÃO</p>
+                    <h2>Relatório individual</h2>
+                </div>
+                <span class="numero-grande">02<span>/02</span></span>
+            </div>
+
+            <div id="conteudoResultado"></div>
+
+            <button type="button" id="refazer" class="botao botao-voltar">
+                ↶ REINICIAR AVALIAÇÃO
+            </button>
+        </section>
+
+        <p class="codigo-final">AURA-67 / FIM DO REGISTRO</p>
+    </main>
+
+    <footer>
+        <span>DEPARTAMENTO DE EXPLORAÇÃO EXTRATERRESTRE</span>
+        <span>DOCUMENTO DE SIMULAÇÃO • 2089</span>
+    </footer>
+
+</body>
+</html>
